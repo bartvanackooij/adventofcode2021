@@ -2,7 +2,7 @@
 
 ### Prep for new day.
 
-_in an attempt to simplify the workflow every day I wrote a script to set up the initial working dirs, files, virtual env and input from adventofcode.com. All you need to do is set the session cookie from advent of code in your repo and run the script with the current day like this:_
+_In an attempt to simplify the every day workflow I wrote a script to set up the initial working dirs, files and input from adventofcode.com. All you need to do is set the session cookie from advent of code in your repo and run the script with the current day like this:_
 
 ```shell
 $ ./new_day.sh 06

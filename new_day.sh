@@ -8,20 +8,16 @@
 #   # create data for day 06
 #   $ sh new_day.sh 06
 
-year=2020
-
+year=2021
 
 if [ $# -ne 1 ] || [ ${#1} -ne 2 ] ; then
   echo "Please specify the day to create the data for in the correct format (e.g. 01, 04, 10, 25)."
   exit
 fi
 
-
-
 # check if directory exists
 day_number=$1
 dir_name="day"$day_number
-
 
 if [ -d "days/$dir_name" ] ; then
   echo "Project files already present for $dir_name. Stopping now."
@@ -48,5 +44,3 @@ if [ $response -ne "200" ] ; then
 else
   curl $url -H $header -o "days/$dir_name/input.txt"
 fi
-
-
